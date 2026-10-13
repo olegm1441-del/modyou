@@ -105,3 +105,18 @@ a:focus-visible,button:focus-visible{outline:3px solid #9d4c78;outline-offset:4p
 @media(max-width:900px){.news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.news-team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.news-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){.news-grid,.news-gallery{grid-template-columns:minmax(0,1fr)}.news-cover img{height:360px}.news-body{font-size:16px}.news-video-area{padding:12px}.related-links{padding-bottom:32px}.related-links a{font-size:13px}.news-article-footer{align-items:flex-start}.news-article-footer .btn{width:100%}.breadcrumbs{padding-top:18px}.breadcrumbs+.page{padding-top:30px}.news-meta{gap:8px 14px}.news-cover{padding:12px}.news-video-badge{left:20px;bottom:20px}.news-team-grid{gap:14px}.news-article>.page-intro h1{overflow-wrap:break-word}}
 @media(max-width:374px){.news-team-grid{grid-template-columns:minmax(0,1fr)}.news-cover img{height:320px}}
+
+/* Existing cards with the confirmed starting prices and original media. */
+.format-includes{position:relative;z-index:1;list-style:disc;padding-left:20px;margin:8px 0 24px;line-height:1.6;color:#635967;font-size:14px}
+.format-includes li+li{margin-top:6px}
+.format-card .button-row{position:relative;z-index:1}
+.format-meta strong{font-size:20px;border:0;padding-left:0;color:var(--ink)}
+.tariff-note,.collection-price-note{color:var(--muted);line-height:1.65;max-width:900px;margin:22px 0}
+.price-status{display:block;font-size:11px;font-weight:400;color:var(--muted);margin-top:4px}
+.clothing-art a{display:block;width:100%;height:100%}
+.news-feature-image{max-width:700px;margin:0 auto 35px}
+.news-feature-image img{display:block;width:100%;height:auto;max-height:75vh;object-fit:contain;border-radius:16px}
+@media(max-width:680px){.format-card .button-row{width:100%}.format-card .button-row .btn{width:100%;flex:auto}.format-includes{font-size:14px}}
+
+.news-body p+p{margin-top:18px}
+.format-card h3{font-size:clamp(2.3rem,5vw,4.5rem)}

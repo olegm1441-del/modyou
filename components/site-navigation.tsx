@@ -1,5 +1,5 @@
 import { ArrowUpRight, ChevronRight } from "lucide-react";
-import { news } from "@/data/news";
+import { allNews } from "@/data/news";
 
 const labels: Record<string, string> = {
   "/": "Главная", "/create": "Создать куклу", "/collection": "Коллекция", "/clothing": "Создать одежду", "/about": "О нас", "/faq": "Вопрос-ответ", "/news": "Наши новости", "/my-look": "Мой образ", "/favorites": "Избранное", "/cart": "Корзина", "/checkout": "Оформление заказа", "/tracking": "Отслеживание заказа", "/account": "Личный кабинет", "/app": "Приложение", "/editor": "Редактор контента", "/constructor/standart": "Конструктор STANDART", "/constructor/pro": "Конструктор PRO", "/info/privacy": "Политика конфиденциальности", "/info/terms": "Пользовательское соглашение", "/info/delivery": "Условия доставки", "/info/payment": "Оплата",
@@ -26,7 +26,7 @@ const related: Record<string, Link[]> = {
 
 export function Breadcrumbs({ path, productTitle }: { path: string; productTitle?: string }) {
   if (path === "/") return null;
-  const story = news.find(n => path === `/news/${n.slug}`);
+  const story = allNews.find(n => path === `/news/${n.slug}`);
   const parents: Link[] = [["Главная", "/"]];
   if (story) parents.push(["Наши новости", "/news"]);
   else if (path.startsWith("/collection/")) parents.push(["Коллекция", "/collection"]);
